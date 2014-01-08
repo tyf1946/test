@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 新鲜事 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_news"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="0dip" >
+
+            <ImageView
+                android:id="@+id/iv_menu_news_logo"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/iv_menu_news" />
+
+            <TextView
+                android:id="@+id/tv_menu_news"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/iv_menu_news_logo"
+                android:gravity="center"
+                android:text="新鲜事"
+                android:textColor="@android:color/white"
+                android:textSize="20dip" />
+
+            <ImageView
+                android:id="@+id/iv_menu_news_news"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@id/tv_menu_news"
+                android:background="@drawable/iv_menu_point"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_menu_jiantou"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/iv_menu_jiantou" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_menu_item1" />
+
+        <!-- 乐吧 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_leba"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="0dip" >
+
+            <ImageView
+                android:id="@+id/iv_menu_leba_logo"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/iv_menu_leba" />
+
+            <TextView
+                android:id="@+id/tv_menu_leba"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/iv_menu_leba_logo"
+                android:gravity="center"
+                android:text="乐吧"
+                android:textColor="@android:color/white"
+                android:textSize="20dip" />
+
+            <ImageView
+                android:id="@+id/iv_menu_leba_news"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@id/tv_menu_leba"
+                android:background="@drawable/iv_menu_point"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_menu_jiantou"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/iv_menu_jiantou" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_menu_item1" />
+
+        <!-- 推荐 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_recommend"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="0dip" >
+
+            <ImageView
+                android:id="@+id/iv_menu_recommend_logo"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/iv_menu_remmoned" />
+
+            <TextView
+                android:id="@+id/tv_menu_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/iv_menu_recommend_logo"
+                android:gravity="center"
+                android:text="推荐"
+                android:textColor="@android:color/white"
+                android:textSize="20dip" />
+
+            <ImageView
+                android:id="@+id/iv_menu_recommend_news"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@id/tv_menu_recommend"
+                android:background="@drawable/iv_menu_point"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_menu_jiantou"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/iv_menu_jiantou" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_menu_item2" />
+
+        <!-- 用户中心 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_user"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="0dip" >
+
+            <ImageView
+                android:id="@+id/iv_menu_user_logo"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/iv_menu_usercenter" />
+
+            <TextView
+                android:id="@+id/tv_menu_user"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/iv_menu_user_logo"
+                android:gravity="center"
+                android:text="用户中心"
+                android:textColor="@android:color/white"
+                android:textSize="20dip" />
+
+            <ImageView
+                android:id="@+id/iv_menu_user_news"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@id/tv_menu_user"
+                android:background="@drawable/iv_menu_point"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_menu_jiantou"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/iv_menu_jiantou" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_menu_item1" />
+
+        <!-- 设置 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_setting"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="0dip" >
+
+            <ImageView
+                android:id="@+id/iv_menu_setting_logo"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/iv_menu_setting" />
+
+            <TextView
+                android:id="@+id/tv_menu_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/iv_menu_setting_logo"
+                android:gravity="center"
+                android:text="设置"
+                android:textColor="@android:color/white"
+                android:textSize="20dip" />
+
+            <ImageView
+                android:id="@+id/iv_menu_setting_news"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@id/tv_menu_setting"
+                android:background="@drawable/iv_menu_point"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_menu_jiantou"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/iv_menu_jiantou" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_menu_item1" />
+    </LinearLayout>
+
+</RelativeLayout>
